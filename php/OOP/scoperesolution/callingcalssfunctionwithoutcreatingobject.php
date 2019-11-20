@@ -26,8 +26,7 @@ flowers::rose();  // you can call non static function but not non static propert
 echo "<br>";
 
 echo flowers::$name; // accessing property of static value only , we 
-
 //this is not possible in non static property
-
 echo flowers::$nonstat;
+
 ?>
