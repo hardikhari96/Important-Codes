@@ -1,0 +1,20 @@
+
+
+<div id="invoice">
+Hello
+</div>
+
+
+<button onclick="generatePDF()">Generate Pdf </button>
+<script src="pdf.js" ></script>
+<script>
+  function generatePDF() {
+        // Choose the element that our invoice is rendered in.
+        const element = document.getElementById("invoice");
+        // Choose the element and save the PDF for our user.
+        html2pdf()
+          .from(element)
+          .save();
+      };
+
+</script>

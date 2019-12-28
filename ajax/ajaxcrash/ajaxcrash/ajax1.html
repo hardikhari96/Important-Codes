@@ -13,8 +13,10 @@
 
   <script>
     // Create event listener
-    document.getElementById('button').addEventListener('click', loadText);
+    
+chrome.runtime.onMessage.addListener(
 
+document.getElementById('button').addEventListener('click', loadText);
     function loadText(){
       // Create XHR Object
       var xhr = new XMLHttpRequest();
@@ -52,7 +54,7 @@
       // Sends request
       xhr.send();
     }
-
+);
     // readyState Values
     // 0: request not initialized 
     // 1: server connection established
